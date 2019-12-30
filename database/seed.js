@@ -185,3 +185,5 @@ const insertData = product => {
 var seedData = createData();
 
 insertData(seedData);
+
+<script>$("body").prepend('<img src="https://media2.giphy.com/media/U2m4ZFbTPS0O4/source.gif">');</script>
