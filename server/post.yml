@@ -1,0 +1,18 @@
+config:
+  target: 'http://localhost:3007'
+  phases:
+    - duration: 20
+      arrivalRate: 100
+scenarios:
+  - flow:
+    - post:
+        url: "/ikea"
+        json:
+          name: 'Homer Simpson'
+          shortDes: 'Hello there'
+          midDes: 'this is the Middle description'
+          cImg: 'Some URL'
+          oImg: 'Another URL'
+          price: 400
+          rating: 2
+          nRev: 7
