@@ -7,10 +7,11 @@ const csvPath = path.join(__dirname, './report.csv');
 var inputFile = path.join(__dirname, './report.csv');
 
 var pool = new Pool({
-    host: 'localhost',
-    user: 'postgres',
-    port: 5432,
-    database: 'ikeaproducts'
+  host: 'localhost',
+  user: 'postgres',
+  password: 'postgres',
+  port: 5432,
+  database: 'ikeaproducts'
 })
  
 pool.connect(function(err, client, done) {

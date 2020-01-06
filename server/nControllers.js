@@ -1,8 +1,9 @@
 const { Client } = require('pg');
 
-var client = new Client ({
+var pool = new Pool({
     host: 'localhost',
-    user: 'ikeaCustomer',
+    user: 'postgres',
+    password: 'postgres',
     port: 5432,
     database: 'ikeaproducts'
 })
