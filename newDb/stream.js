@@ -7,7 +7,7 @@ const csvPath = path.join(__dirname, './report.csv');
 var inputFile = path.join(__dirname, './report.csv');
 
 var pool = new Pool({
-    host: 'localhost',
+    host: 'ec2-13-56-115-29.us-west-1.compute.amazonaws.com',
     user: 'ikeaCustomer',
     port: 5432,
     database: 'ikeaproducts'
