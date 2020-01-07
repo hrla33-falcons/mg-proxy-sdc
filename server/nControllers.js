@@ -21,10 +21,12 @@ const controllers = {
         })
     },
     verify: (req, res) => {
-        if (err){
-            res.status(400).send(err)
-        } else {
-            res.status(200).send('loaderio-1b3a0947060d56a5424bc2b80f5b1d72')
+        (err) => {
+            if (err){
+                res.status(400).send(err)
+            } else {
+                res.status(200).send('loaderio-1b3a0947060d56a5424bc2b80f5b1d72')
+            }
         }
     },
     post: (req, res) => {
