@@ -56,3 +56,5 @@ const controllers = {
 }
 
 module.exports = controllers;
+
+ssh -i attemptTwo.pem -N -L 3007:ec2-18-144-70-202.us-west-1.compute.amazonaws.com:3007 ubuntu@ec2-18-144-70-202.us-west-1.compute.amazonaws.com
