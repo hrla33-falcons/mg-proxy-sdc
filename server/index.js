@@ -15,9 +15,11 @@ app.use(bodyParser.urlencoded({extended: true}))
 app.use(express.static(__dirname + '/../client/dist/'))
 
 app.get('/ikea/:id', controllers.getOne);
+app.get('/loaderio-cdbd83d9a8e2aeb77c562867ecdb60d5/', controllers.verify)
 app.post('/ikea', controllers.post);
 app.put('/ikea/:id', controllers.update);
 app.delete('/ikea/:id', controllers.delete)
 
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))
+
