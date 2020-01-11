@@ -15,7 +15,8 @@ app.use(bodyParser.urlencoded({extended: true}))
 app.use(express.static(__dirname + '/../client/dist/'))
 
 app.get('/ikea/:id', controllers.getOne);
-app.get('/loaderio-cdbd83d9a8e2aeb77c562867ecdb60d5/', controllers.verify)
+app.get('/loaderio-c8fbf10f5da68ff53c31c6fab83a7f53/', controllers.verify);
+app.get('/loaderio-c8fbf10f5da68ff53c31c6fab83a7f53.html', controllers.verify);
 app.post('/ikea', controllers.post);
 app.put('/ikea/:id', controllers.update);
 app.delete('/ikea/:id', controllers.delete)

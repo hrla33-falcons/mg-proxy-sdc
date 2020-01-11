@@ -1,7 +1,7 @@
 const { Client } = require('pg');
 
 var client = new Client ({
-    host: 'localhost',
+    host: '172.31.23.212',
     user: 'postgres',
     password: 'postgres',
     port: 5432,
@@ -21,7 +21,7 @@ const controllers = {
         })
     },
     verify: (req, res) => {
-                res.status(200).send('loaderio-1b3a0947060d56a5424bc2b80f5b1d72')
+                res.status(200).send('loaderio-c8fbf10f5da68ff53c31c6fab83a7f53')
     },
     post: (req, res) => {
         var { name, shortdes, middes, cimg, oimg, price, rating, nrev } = req.body
